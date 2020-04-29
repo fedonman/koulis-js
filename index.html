@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>koulis.js</title>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Replace the boring console with the awesome koulis.log, koulis.error, and koulis.warn. Hit Ctrl/CMD + Shift + J and check it out.</h1>
+  </div>
+  <script type="module">
+    import { koulis } from './index.js';
+    const x = 10;
+    const obj = {
+      name: "fedonman",
+      job: "dev",
+      age: 31
+    };
+    const func = (a, b) => {
+      return a + b
+    };
+    
+    koulis.log("This is a number:", x, ", this is an object:", obj, "and this is a function:", func.toString());
+  </script>
+</body>
+</html>
