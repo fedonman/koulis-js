@@ -1,10 +1,10 @@
-# koulis.js
+# koulis-js
 
 Replace your boring console.log with the awesome koulis.log
 
 ## Installing
 
-The easiest way to install koulis.js is through npm
+The easiest way to install koulis-js is through npm
 
 ```bash
 npm install --save koulis-js
@@ -12,7 +12,7 @@ npm install --save koulis-js
 
 ## Usage
 
-Import koulis.js in your project
+Import koulis-js in your project
 
 ```js
 import { koulis } from 'koulis-js';
