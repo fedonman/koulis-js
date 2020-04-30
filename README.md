@@ -18,7 +18,7 @@ Import koulis.js in your project
 import { koulis } from 'koulis-js';
 ```
 
-Use `koulis.log` for all your logging needs
+Use `koulis.log` for all your logging needs.
 
 ```js
 koulis.log("Hello world!");
@@ -26,7 +26,27 @@ koulis.log("Hello world!");
 
 Get awesomeness
 
-![](assets/koulis.gif)
+![](assets/koulis-01.gif)
+
+It has built-in support for logging objects and functions. Running this code
+
+```js
+const answer = 42;
+const me = {
+    name: "fedonman",
+    job: "dev",
+    github: "https://github.com/fedonman"
+};
+const add = (a, b) => {
+    return a + b
+};
+
+koulis.log("This is a number:", answer, ", this is an object:", me, "and this is a function:", add.toString());
+```
+
+will result to this
+
+![](assets/koulis-02.gif)
 
 ## Author
 
