@@ -1,6 +1,6 @@
 {
   "name": "koulis-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Replace your boring console.log with the awesome koulis.log",
   "main": "index.js",
   "scripts": {
