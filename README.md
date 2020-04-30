@@ -37,11 +37,9 @@ const me = {
     job: "dev",
     github: "https://github.com/fedonman"
 };
-const add = (a, b) => {
-    return a + b
-};
+const add = (a, b) => a + b;
 
-koulis.log("This is a number:", answer, ", this is an object:", me, "and this is a function:", add.toString());
+koulis.log("This is a number:", answer, ", this is an object:", me, "and this is a function:", add);
 ```
 
 will result to this
