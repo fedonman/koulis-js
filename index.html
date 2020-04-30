@@ -5,21 +5,22 @@
 </head>
 <body>
 	<div class="wrapper">
-		<h1>Replace the boring console with the awesome koulis.log, koulis.error, and koulis.warn. Hit Ctrl/CMD + Shift + J and check it out.</h1>
+		<h1>Replace your boring console.log with the awesome koulis.log. Hit Ctrl/CMD + Shift + J and check it out.</h1>
   </div>
   <script type="module">
     import { koulis } from './index.js';
-    const x = 10;
-    const obj = {
+    const answer = 42;
+    const me = {
       name: "fedonman",
       job: "dev",
-      age: 31
+      github: "https://github.com/fedonman"
     };
-    const func = (a, b) => {
+    const add = (a, b) => {
       return a + b
     };
-    
-    koulis.log("This is a number:", x, ", this is an object:", obj, "and this is a function:", func.toString());
+    // log anything with the power of Prime Minister
+    //koulis.log("This is a number:", answer, ", this is an object:", me, "and this is a function:", add.toString());
+    koulis.log("Hello world!");
   </script>
 </body>
 </html>

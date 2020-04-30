@@ -1,10 +1,10 @@
 {
   "name": "koulis",
   "version": "1.0.0",
-  "description": "Replace the boring console.log with the awesome koulis.log",
+  "description": "Replace your boring console.log with the awesome koulis.log",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",

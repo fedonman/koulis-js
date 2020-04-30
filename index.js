@@ -1,14 +1,12 @@
-const gifs = {
-  log: [
-
-  ],
-  error: [
-
-  ],
-  warn: [
-
-  ]
-};
+const gifs = [
+  'https://media1.tenor.com/images/4945fb552b4066ff6c1785f99d7241c8/tenor.gif',
+  'https://media1.tenor.com/images/f8ebbeae621b9e51accc8772860af68c/tenor.gif',
+  'https://media1.tenor.com/images/b67e6cf1febcd2fed0d65e944f787585/tenor.gif',
+  'https://thumbs.gfycat.com/SnarlingChiefAbalone-size_restricted.gif',
+  'https://media1.tenor.com/images/46b748d4e3f40ab5cbc2d4899417aa70/tenor.gif',
+  'https://media1.tenor.com/images/74d653d21c14f4b208d7c9bb540a6b37/tenor.gif?itemid=15137029',
+  'https://media.giphy.com/media/3ohhwMEQJY5zRiWOWY/giphy.gif',
+];
 
 const parse_args = (...args) => {
   let string = '';
@@ -43,7 +41,8 @@ const render = (text, gif_url) => {
     canvas.width = image.width;
     canvas.height = image.height;
     
-    ctx.font = "normal 20px Consolas";
+    const font_size = image.width / 30;
+    ctx.font = `normal ${font_size}px Consolas`;
     ctx.fillStyle = "#fff";
     ctx.textAlign = "left";
     ctx.textBaseline = "middle";
@@ -72,13 +71,7 @@ const render = (text, gif_url) => {
 
 const koulis = {
   log: (...args) => {
-    render(parse_args(...args), 'https://media1.tenor.com/images/4945fb552b4066ff6c1785f99d7241c8/tenor.gif');
-  },
-  error: (...args) => {
-    render(parse_args(...args), 'https://media1.tenor.com/images/4945fb552b4066ff6c1785f99d7241c8/tenor.gif');
-  },
-  warn: (...args) => {
-    render(parse_args(...args), 'https://media1.tenor.com/images/4945fb552b4066ff6c1785f99d7241c8/tenor.gif');
+    render(parse_args(...args), gifs[Math.floor((Math.random() * gifs.length))]);
   }
 };
 
