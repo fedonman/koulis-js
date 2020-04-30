@@ -28,7 +28,7 @@ Get awesomeness
 
 ![](assets/koulis-01.gif)
 
-It has built-in support for logging objects and functions. Running this code
+There is built-in support for logging objects and functions. Running this code
 
 ```js
 const answer = 42;
