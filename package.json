@@ -19,6 +19,9 @@
   ],
   "author": "fedonman",
   "license": "MIT",
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bugs": {
     "url": "https://github.com/fedonman/koulis-js/issues"
   },
